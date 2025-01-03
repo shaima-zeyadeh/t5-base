@@ -31,7 +31,7 @@ def main():
 
             # Load the summarization pipeline
             st.subheader("Processing the Summary")
-            summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+            summarizer = pipeline("summarization", model="t5-base")
 
             # Customize the summary length
             max_length = st.slider("Maximum length of the summary (words)", 50, 500, 150)
